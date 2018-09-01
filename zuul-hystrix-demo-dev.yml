@@ -3,9 +3,7 @@ zuul:
     myDemo:
       path: /demo/**
       serviceId: myDemo
-# 排除某些路由
-  ignored-patterns:
-    - /**/product/listForOrder
+  ignoredServices: '*'
 management:
   security:
     enabled: false
