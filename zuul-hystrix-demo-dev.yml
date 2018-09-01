@@ -1,8 +1,8 @@
 zuul:
   routes:
     demo-api:
-      path: /demo/**
-      serviceId: myDemo
+      path: /demo-api/**
+      serviceId: mydemo
     demo-feign-api:
       path: /demo-feign/**
       serviceId: myDemo-feign
