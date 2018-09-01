@@ -6,7 +6,7 @@ zuul:
       sensitiveHeaders:
     myDemo:
       path: /myDemo/**
-      serviceId: zuul-hystrix
+      serviceId: zuul-hystrix-demo
       sensitiveHeaders:
 # 排除某些路由
   ignored-patterns:
