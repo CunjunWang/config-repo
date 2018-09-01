@@ -1,8 +1,11 @@
 zuul:
   routes:
-    myDemo:
+    demo-api:
       path: /demo/**
       serviceId: myDemo
+    demo-feign-api:
+      path: /demo-feign/**
+      serviceId: myDemo-feign
   ignoredServices: '*'
 management:
   security:
