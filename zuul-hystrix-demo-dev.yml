@@ -3,10 +3,9 @@ zuul:
     demo-api:
       path: /demo-api/**
       serviceId: mydemo
-    demo-feign-api:
-      path: /demo-feign/**
-      serviceId: myDemo-feign
-  ignoredServices: '*'
+  ignored-patterns:
+    - /mydemo/shouldNotAccessedByOthers
+    - /demo-api/shouldNotAccessedByOthers
 management:
   security:
     enabled: false
