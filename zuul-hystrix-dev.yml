@@ -1,0 +1,16 @@
+zuul:
+  routes:
+    myConfig:
+      path: /myConfig/**
+      serviceId: config
+      sensitiveHeaders:
+    myDemo:
+      path: /myDemo/**
+      serviceId: zuul-hystrix
+      sensitiveHeaders:
+# 排除某些路由
+  ignored-patterns:
+    - /**/product/listForOrder
+management:
+  security:
+    enabled: false
